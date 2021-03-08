@@ -1,0 +1,41 @@
+<form [formGroup]="formGroup" title="formgamestore">
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>ID</mat-label>
+      <input matInput type="text"
+             formControlName="id"
+             [placeholder]="'Insert a identity for this game'"/>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Title</mat-label>
+      <input matInput type="text"
+             formControlName="title"
+             [placeholder]="'Insert a title for this game'"/>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Gender</mat-label>
+      <mat-select
+        ngDefaultControl
+        formControlName="gender"
+        [placeholder]="'Insert a gender'">
+        <mat-option value="FPS">FPS</mat-option>
+        <mat-option value="SPORT">SPORT</mat-option>
+        <mat-option value="STRATEGY">STRATEGY</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Description</mat-label>
+      <textarea matInput
+                formControlName="description"
+                [placeholder]="'Insert a description'"></textarea>
+    </mat-form-field>
+  </div>
+  <button mat-raised-button type="button" color="primary" (click)="onSave()" style="margin-right: 15px">SAVE</button>
+  <button mat-stroked-button color="primary" routerLink="/games">CANCEL</button>
+</form>

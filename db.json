@@ -1,0 +1,16 @@
+{
+  "games": [
+    {
+      "id": "1",
+      "title": "Command and Conquer",
+      "description": "Descrição do jogo",
+      "gender": "STRATEGY"
+    }
+  ],
+  "user": {
+    "id": 101,
+    "token_": "",
+    "name": "Matheus Ramos",
+    "image": null
+  }
+}
